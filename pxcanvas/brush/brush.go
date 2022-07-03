@@ -45,8 +45,8 @@ func Cursor(config apptype.PxCanvasConfig, brush apptype.BrushType, ev *desktop.
 		bottom.Position2 = fyne.NewPos(xOrigin+pxSize, yOrigin+pxSize)
 
 		objects = append(objects, left, top, right, bottom)
-		return objects
 	}
+	return objects
 }
 
 func TryBrush(appState *apptype.State, canvas apptype.Brushable, ev *desktop.MouseEvent) bool {
